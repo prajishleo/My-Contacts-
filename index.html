@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/2534248440.js" crossorigin="anonymous"></script>
+    <title>My Contacts App</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <span><i class="fas fa-address-book text-primary"></i></span>
+              My <span class="text-primary"><b> Contacts </b></span>
+        </h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name"><big>Name</big></label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="phone"><big>Phone Number</big></label>
+                <input type="text" id="phone" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="mail"><big>E-mail Address</big></label>
+                <input type="text" id="mail" class="form-control">
+            </div>
+            <input type="submit" value="Add Contact" class="btn btn-primary btn-block" style="font-size: 25px;">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>E-mail</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="contact-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
